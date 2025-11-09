@@ -4,7 +4,7 @@ import './Navbar.scss'
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <div className='conteiner'>
+        <div className='container'>
             <div className='logo'>
                 <span className='text'>fiverr</span>
                 <span className='dot'>.</span>
