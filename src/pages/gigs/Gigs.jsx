@@ -22,7 +22,7 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr > Graphics & Design</span>
+        <span className="breadcrumbs">Liverr > Graphics & Design ></span>
         <h1>AI Artists</h1>
         <p>
           Explore the boundaries of art and technology with Liverr's AI artists
@@ -34,8 +34,9 @@ function Gigs() {
             <input ref={maxRef} type="number" placeholder="max" />
             <button onClick={apply}>Apply</button>
           </div>
+
           <div className="right">
-            <span className="sortBy">Sort By</span>
+            <span className="sortBy">Sort by</span>
             <span className="sortType">
               {sort === "sales" ? "Best Selling" : "Newest"}
             </span>
@@ -53,9 +54,9 @@ function Gigs() {
           </div>
         </div>
         <div className="cards">
-          {gigs.map((gig) => {
-            <GigCard key={gig.id} item={gig} />;
-          })}
+          {gigs.map((gig) => (
+            <GigCard key={gig.id} item={gig} />
+          ))}
         </div>
       </div>
     </div>
